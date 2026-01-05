@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Customer Churn Prediction</h2>
+
+    <form id="churnForm">
+        <input type="text" placeholder="Gender (Male/Female)" id="gender" required>
+        <input type="number" placeholder="Senior Citizen (0/1)" id="SeniorCitizen" required>
+        <input type="text" placeholder="Partner (Yes/No)" id="Partner" required>
+        <input type="text" placeholder="Dependents (Yes/No)" id="Dependents" required>
+        <input type="number" placeholder="Tenure (months)" id="tenure" required>
+        <input type="text" placeholder="Phone Service (Yes/No)" id="PhoneService" required>
+        <input type="text" placeholder="Internet Service (DSL/Fiber optic/No)" id="InternetService" required>
+        <input type="text" placeholder="Contract (Month-to-month/One year/Two year)" id="Contract" required>
+        <input type="number" placeholder="Monthly Charges" id="MonthlyCharges" required>
+        <input type="number" placeholder="Total Charges" id="TotalCharges" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
